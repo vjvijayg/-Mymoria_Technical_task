@@ -3,6 +3,8 @@ import { Field, reduxForm } from 'redux-form';
 import validate from './validate';
 import renderField from './renderField';
 
+// CustomerPage function handles the second state of the registration from
+// and provides navigation to previos state
 
 const CustomerPage = props => {
   const { handleSubmit, previousPage } = props;
@@ -11,7 +13,7 @@ const CustomerPage = props => {
       <Field
         name="custFirstName"
         type="text"
-        component={renderField}
+        component={renderField}// renderField checks the user input in realtime
         label="Name"
       />
       <Field

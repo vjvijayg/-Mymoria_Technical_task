@@ -4,8 +4,10 @@ import moment from 'moment';
 
 import 'react-datepicker/dist/react-datepicker.css';
 
-// CSS Modules, react-datepicker-cssmodules.css
-// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+// react-datepicker and moment modules provide Calander on the page
+// so that user can choose the date.
+
+// Deathday class renders the date on the Deceased page
 
 export class Deathday extends React.Component {
   constructor (props) {

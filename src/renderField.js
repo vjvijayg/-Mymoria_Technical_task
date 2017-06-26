@@ -1,5 +1,9 @@
 import React from 'react';
 
+// renderField function checks the validity of user input.
+// If user enters invalid data and moved to touched state then
+// displays the error message.
+
 const renderField = ({ input, label, type, meta: { touched, error } }) => (
   <div>
     <label>{label}</label>

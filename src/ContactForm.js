@@ -4,6 +4,9 @@ import DeceasedPage from './DeceasedPage';
 import CustomerPage from './CustomerPage';
 import FuneralPage from './FuneralPage';
 
+
+// ContactForm class navigates between three stages of registration form
+
 class ContactForm extends Component {
   constructor(props) {
     super(props);
@@ -13,9 +16,14 @@ class ContactForm extends Component {
       page: 1,
     };
   }
+  // nextPage() method captures the current state and
+  // navigates to the next state
+
   nextPage() {
     this.setState({ page: this.state.page + 1 });
   }
+  // previousPage() captures the current state and navigaes to
+  // previous state of the page
 
   previousPage() {
     this.setState({ page: this.state.page - 1 });
@@ -26,7 +34,8 @@ class ContactForm extends Component {
     const { page } = this.state;
     return (
       <div>
-        {page === 1 && <DeceasedPage onSubmit={this.nextPage} />}
+        {page === 1 &&
+          <DeceasedPage onSubmit={this.nextPage} />}
         {page === 2 &&
           <CustomerPage
             previousPage={this.previousPage}

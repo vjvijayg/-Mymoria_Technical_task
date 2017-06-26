@@ -1,3 +1,7 @@
+
+// validate function validates the user data, if user enters invalid data
+// then the error messages will be posted to renderField module.
+
 const validate = values => {
   const errors = {};
   if (!values.firstName || values.firstName.length <3) {
@@ -6,7 +10,7 @@ const validate = values => {
   }
   if (!values.lastName || values.lastName.length <3) {
     errors.lastName =
-    'Please enter valid name';
+    'Please enter valid surname';
   }
   if (!values.custFirstName || values.custFirstName.length <3) {
     errors.custFirstName =
@@ -14,7 +18,7 @@ const validate = values => {
   }
   if (!values.custLastName || values.custLastName.length <3) {
     errors.custLastName =
-    'Please enter valid name';
+    'Please enter valid surname';
   }
   if(!values.addressLine || values.addressLine.length <5) {
     errors.addressLine =
@@ -36,7 +40,7 @@ const validate = values => {
     'Phone number must be 11 digits';
   }
   if (!values.funeralType) {
-    errors.funeralType = 'Required';
+    errors.funeralType = 'Please choose Funeral process';
   }
   return errors;
 };

@@ -4,8 +4,13 @@ import validate from './validate';
 import renderField from './renderField';
 import Deathday from './Deathday';
 
+// renderError function checks the data entered in Marital Status input.
+
 const renderError = ({ meta: { touched, error } }) =>
   touched && error ? <span>{error}</span> : false;
+
+// DeceasedPage class is the first state of application form
+// which takes the Deceased Person or died person data.
 
 const DeceasedPage = props => {
   const { handleSubmit } = props;

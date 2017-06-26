@@ -2,7 +2,12 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import validate from './validate';
 
+// User can pick the type of funeral process available here.
+
 const funeral = ['Burial', 'Cremation', 'Sea', 'Tree'];
+
+// renderFuneralSelector function generates the dropdown method to select
+// the funeral type
 
 const renderFuneralSelector = ({ input, meta: { touched, error } }) => (
   <div>
@@ -13,6 +18,8 @@ const renderFuneralSelector = ({ input, meta: { touched, error } }) => (
     {touched && error && <span>{error}</span>}
   </div>
 );
+
+// FuneralPage function handles the navigation between the states available.
 
 const FuneralPage = props => {
   const { handleSubmit, pristine, previousPage, submitting } = props;
@@ -25,7 +32,8 @@ const FuneralPage = props => {
       <div>
         <label>Remarks</label>
         <div>
-          <Field name="remarks" component="textarea" placeholder="Remarks to Mention" />
+          <Field name="remarks" component="textarea"
+            placeholder="Remarks to Mention" />
         </div>
       </div>
       <div>
