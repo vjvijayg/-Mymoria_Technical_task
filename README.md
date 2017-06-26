@@ -1,5 +1,4 @@
 # Mymoria Technical Task
-___
 
 It's a Multi-step web application which allows users to enter data and register. This whole application is developed in Javascript, ES6 
 using the React and Redux libraries. User experience navigating through multi-step application although it's a Single Page Application.
