@@ -38,7 +38,7 @@ const FuneralPage = props => {
   );
 };
 export default reduxForm({
-  form: 'Mymoria Application Form', //                 <------ same form name
+  form: 'Mymoria Application Form', //        <------ same form name
   destroyOnUnmount: false, //        <------ preserve form data
   forceUnregisterOnUnmount: true, // <------ unregister fields on unmount
   validate,

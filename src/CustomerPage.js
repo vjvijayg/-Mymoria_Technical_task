@@ -1,7 +1,7 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
-import validate from '../src/validate';
-import renderField from '../src/renderField';
+import validate from './validate';
+import renderField from './renderField';
 
 
 const CustomerPage = props => {
@@ -43,7 +43,7 @@ const CustomerPage = props => {
 };
 
 export default reduxForm({
-  form: 'Mymoria Application Form', //                 <------ same form name
+  form: 'Mymoria Application Form', //     <------ same form name
   destroyOnUnmount: false, //        <------ preserve form data
   forceUnregisterOnUnmount: true, // <------ unregister fields on unmount
   validate,

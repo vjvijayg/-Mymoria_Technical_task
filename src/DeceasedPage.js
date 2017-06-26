@@ -45,12 +45,14 @@ const DeceasedPage = props => {
         <label>Marital Status</label>
         <div>
           <label>
-            <Field name="maritalStatus" component="input" type="radio" value="male" />
+            <Field name="maritalStatus" component="input"
+            type="radio" value="male" />
             {' '}
             Single
           </label>
           <label>
-            <Field name="maritalStatus" component="input" type="radio" value="female" />
+            <Field name="maritalStatus" component="input"
+            type="radio" value="female" />
             {' '}
             Married
           </label>
@@ -73,7 +75,7 @@ const DeceasedPage = props => {
 };
 
 export default reduxForm({
-  form: 'Mymoria Application Form', //                 <------ same form name
+  form: 'Mymoria Application Form', //      <------ same form name
   destroyOnUnmount: false, //        <------ preserve form data
   forceUnregisterOnUnmount: true, // <------ unregister fields on unmount
   validate,
