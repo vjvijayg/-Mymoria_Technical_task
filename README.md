@@ -1,9 +1,7 @@
-# Multi-Step Submission Form at Mymoria Technical Task
+# Multi-Step Submission Form Technical Task at a Company
 
 It's a web application which allows users to enter data and register. This whole application is developed in Javascript, ES6 
 using the React and Redux libraries. User experience navigating through multi-step application although it's a Single Page Application.
-
-Output can be found in [wiki of this repository](https://bitbucket.org/vjvijayg/mymoria_technical-task/wiki/Home).
 
 ### Installation and Setup
 ___
@@ -47,7 +45,7 @@ in Javascript, ES6 using the React and Redux libraries. User experience navigati
 
 although it's a Single Page Application.
 
-Source Code can be found [here](https://github.com/vjvijayg/-Mymoria_Technical_task)
+Source Code can be found [here](https://github.com/vjvijayg/multi_step_submission_form)
 
 Here I demonstrate the output of the page in multiple steps.
 
